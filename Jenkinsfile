@@ -7,9 +7,9 @@ node {
     def SFDC_USERNAME
 
     def HUB_ORG=env.HUB_ORG_DH
-    def SFDC_HOST = https://login.salesforce.com/services/oauth2/token
-    def JWT_KEY_CRED_ID = env.JWT_CRED_ID_DH
-    def CONNECTED_APP_CONSUMER_KEY=env.CONNECTED_APP_CONSUMER_KEY_DH
+    def SFDC_HOST = 'https://login.salesforce.com'
+    def JWT_KEY_CRED_ID = 'b4ced825-fbd9-4598-8b73-531e981a7865'
+    def CONNECTED_APP_CONSUMER_KEY='3MVG9fe4g9fhX0E5M6FCzpJYhtDZowZ6z0Oe_GXrse.yF3wJoZRdjcmHoI_9c5b6tKf.ZwYP.E6dL4lX7KmBA'
 
     println 'KEY IS' 
     println JWT_KEY_CRED_ID
