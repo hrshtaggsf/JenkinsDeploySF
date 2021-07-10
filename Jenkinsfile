@@ -6,10 +6,15 @@ node {
     def DEPLOYDIR='src'
     def TEST_LEVEL='RunLocalTests'
     def SF_INSTANCE_URL = env.SF_INSTANCE_URL ?: "https://test.salesforce.com"
-
+	
+    println 'KEY IS' 
+    println JWT_KEY_CRED_ID
+    println HUB_ORG
+    println SFDC_HOST
+    println CONNECTED_APP_CONSUMER_KE
 
     def toolbelt = tool 'toolbelt'
-
+    println toolbelt
 
     // -------------------------------------------------------------------------
     // Check out code from source control.
@@ -17,6 +22,7 @@ node {
 
     stage('checkout source') {
         checkout scm
+	    println checkout
     }
 
 
